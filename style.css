@@ -1,0 +1,133 @@
+/* Default Section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #33a274;
+}
+
+/* Main Section */
+
+main{
+    width: 90vw;
+    height: 15rem;
+    margin: auto;
+}
+
+main>*{
+    width: 100%;
+}
+
+/* Nav Section */
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+nav>*{
+    height: 1.5rem;
+    margin: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav>*:active{
+    border-bottom: 1px solid white;
+}
+
+
+/* Header Section */
+
+header{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e587;
+}
+
+header>*{
+    font-size: 1.4rem;
+    margin-right: .5rem;
+}
+
+header>input, header>select{
+    margin-right: 1.5rem;
+}
+
+header>button{
+    padding: .2rem;
+    cursor: pointer;
+}
+
+/* Result Section */
+
+.result{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* Card Section */
+
+.card{
+    background-color: #0000002e;
+    width: 30rem;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    margin: 1rem;
+}
+
+.poster{
+    height: 14rem;
+    width: 11rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card div{
+    flex-grow: 1;
+    padding: 1rem;
+    position: relative;
+}
+
+.year{
+    display: flex;
+    justify-content: space-between;
+}
+
+.type{
+    color: whitesmoke;
+}
+
+.fav{
+    color: blue;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+.fav:active{
+    color: red;
+    user-select: none;
+}

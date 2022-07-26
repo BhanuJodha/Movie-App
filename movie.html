@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background-color: #33a274;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 90vw;
+            border-radius: 1rem;
+            padding: 1rem 1.5rem;
+            display: flex;
+        }
+
+        .poster {
+            height: 40rem;
+            width: 30rem;
+            flex-shrink: 0;
+        }
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .language{
+            font-size: .8rem;
+            margin-left: .5rem;
+        }
+
+        .card div {
+            flex-grow: 1;
+            padding: 1rem;
+        }
+
+        .released {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+        }
+
+        .genre {
+            color: rebeccapurple;
+            font-weight: 400;
+        }
+
+        .info{
+            color: blueviolet;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        .rating{
+            color: green;
+            text-align: right;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMGYyNzI1ZTctZGViYS00OGY1LWJkOTEtMzViZmJlN2M5MDczXkEyXkFqcGdeQXVyMzU0ODc1MTQ@._V1_SX300.jpg"
+            alt="" class="poster">
+        <div>
+            <p class="title">Title<span class="language">hindi</span></p>
+            <p class="released">released<span class="genre">genre</span></p>
+            <p>discription</p>
+            <div class="info">
+                <p>Director: <span class="director infoNames"></span></p>
+                <p>Writer: <span class="writer infoNames"></span></p>
+                <p>Actors: <span class="actors infoNames"></span></p>
+                <p>Country: <span class="country infoNames"></span></p>
+                <p class="rating">IMDB Rating: ${res.imdbRating}</p>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="movie.js">
+        </script>
+</body>
+
+</html>
