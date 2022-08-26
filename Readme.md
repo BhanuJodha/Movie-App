@@ -13,9 +13,9 @@ INTRODUCTION
 ------------
 
 This is a simple mini IMDB clone app which have some basic functionality like :-
-    * Search any movie from the API and display the search results on the frontend.
-    * Each search result of the movie should have a favourite button, clicking on which the movie should be added to “My favourite movies” (a list).
-    * On clicking any particular search result (any movie), open a new page with more information about that movie (movie page).
+ * Search any movie from the API and display the search results on the frontend.
+ * Each search result of the movie should have a favourite button, clicking on which the movie should be added to “My favourite movies” (a list).
+ * On clicking any particular search result (any movie), open a new page with more information about that movie (movie page).
 
 REQUIREMENTS
 ------------
