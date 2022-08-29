@@ -96,7 +96,7 @@ function renderFav() {
 
 function redirect(id) {
     // location.assign("/movie.html?id="+id);
-    open("/movie.html?id=" + id, "_blank");
+    open("./movie.html?id=" + id, "_blank");
 };
 
 function clickHandler(e) {
