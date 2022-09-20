@@ -13,7 +13,7 @@ const favourite = localStorage.getItem("favourite") ? JSON.parse(localStorage.ge
 
 function search() {
     const XHR = new XMLHttpRequest();
-    const url = new URL("http://www.omdbapi.com/");
+    const url = new URL("https://www.omdbapi.com/");
     url.searchParams.append("s", title.value);
     url.searchParams.append("apikey", "eb2728ec");
     if (type.value) {
@@ -85,7 +85,7 @@ function renderFav() {
     result.innerHTML = "";
     for (let i of favourite) {
         let XHR = new XMLHttpRequest();
-        XHR.open("get", "http://www.omdbapi.com/?apikey=eb2728ec&i=" + i);
+        XHR.open("get", "https://www.omdbapi.com/?apikey=eb2728ec&i=" + i);
         XHR.onload = () => {
             let res = JSON.parse(XHR.response);
             populateDom(res);
