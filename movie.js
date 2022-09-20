@@ -2,7 +2,7 @@ function xhrRequest(){
     const xhr = new XMLHttpRequest();
     const url = new URL(location.href);
     const id = url.searchParams.get("id");
-    xhr.open("get",`http://www.omdbapi.com/?i=${id}&plot=full&apikey=eb2728ec`);
+    xhr.open("get",`https://www.omdbapi.com/?i=${id}&plot=full&apikey=eb2728ec`);
     xhr.onload = ()=>{
         const response = JSON.parse(xhr.response);
         populateDom(response);
